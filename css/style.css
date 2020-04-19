@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+/* ========================================
+    body
+========================================= */
 
 
 /* ========================================
@@ -28,7 +30,7 @@
   top: 0;
   right: 0;
   z-index: 1;
-  width: 100vw;
+  width: 20vw;    /* 100から変更 */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -59,38 +61,63 @@
     main
 ========================================= */
 .top-main {
-    text-align: center;
-    position: absolute; 
-    top: 0;
-    width: 100%;
-    height: auto;
-    min-height: 100%;
+    text-align: center; 
+    min-height: 100%; 
     color: white; 
     background-color: gray;
-    background-repeat: no-repeat;
-    background-position: center 50%;
-    background-size: cover;
-    background-image: url("../image/IMG_1072.jpg");
-    
   }
-  
-.top-message {
+.top-main img {
+  width: 100vw;
   position: relative;
-   margin-top: 180px; 
 }
-  
+
+.top-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .top-main h2 {
   font-size: 70px;
   font-weight: 500;
   line-height: 1.3;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; 
   margin-bottom: 20px;
   font-family: serif;
   opacity: 0.7;
-  
 }
 
 .top-main p {
   font-size: 24px;
   opacity: 0.7;
+} 
+/* ========================================
+  ABOUT
+========================================= */
+/* 左 */
+.section-width {
+ 
+}
+
+.about-left {
+  width: 300px;
+  height: 200px;
+  float: left;
+  background-color: gray;
+  background-image: url("../image/0216.jpg");
+}
+
+
+
+/* ========================================
+    右
+========================================= */
+.about-right {
+  width: 365px;
+  height: 200px;
+   float: left;
+   background-color: skyblue;
 }
