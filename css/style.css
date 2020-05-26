@@ -62,14 +62,18 @@
 ========================================= */
 .top-main {
     text-align: center; 
-    min-height: 100%; 
+    min-height: 800px; 
     color: white; 
     background-color: gray;
+    background-image: url("../image/IMG_1072 4.jpg");
+    background-size:cover;
+    
   }
-.top-main img {
+/* .top-main img {
   width: 100vw;
+  
   position: relative;
-}
+} */
 
 .top-message {
   position: absolute;
@@ -104,10 +108,13 @@
 
 .about-left {
   width: 300px;
-  height: 200px;
+  height: 300px;
   float: left;
   background-color: gray;
   background-image: url("../image/0216.jpg");
+  background-size:cover;
+  border-radius: 50%;
+  border: 9px solid #becbd5;
 }
 
 
@@ -115,6 +122,13 @@
 /* ========================================
     右
 ========================================= */
+.section-width h2 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  font-family: serif;
+}
+
 .about-right {
   width: 365px;
   height: 200px;
