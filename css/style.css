@@ -21,7 +21,6 @@
   align-items: center;
   background: #adadad;
   color: #fff;
-  
 }
 
 /*--メニュー本体--*/
@@ -30,7 +29,7 @@
   top: 0;
   right: 0;
   z-index: 1;
-  width: 20vw;    /* 100から変更 */
+  width: 25vw;    /* 100から変更 */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,19 +37,27 @@
   justify-content: center;
   background-color: rgba(22, 22, 28, 0.4);
 }
+
 .menu__item{
   width: 100%;
   height: auto;
+  font-size: 20px;
   padding: .5em 1em;
   text-align: center;
   color: #fff;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  color: #c5cbe1;
+  font-size: 24px;
 }
 
 /*--アニメーション部分--*/
 .menu{
   transform: translateX(100vw);
-  transition: all .3s linear;
+  transition: all .5s ease;
 }
 /* アニメーション後のメニューの状態 */
 .menu.is-active{
@@ -61,13 +68,13 @@
     main
 ========================================= */
 .top-main {
+  width: 100%;
     text-align: center; 
-    min-height: 800px; 
+    height: 780px;
     color: white; 
     background-color: gray;
     background-image: url("../image/IMG_1072 4.jpg");
     background-size:cover;
-    
   }
 /* .top-main img {
   width: 100vw;
@@ -102,14 +109,48 @@
   ABOUT
 ========================================= */
 /* 左 */
+#ABOUT {
+  background-color: #fff;
+}
+
 .section-width {
- 
+ width: 100%;
+ margin: 0 auto;
+ text-align: center;
+}
+
+.section-wrapper {
+  padding-top: 130px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-weight: bold;
+  font-family: serif;
+  margin-bottom: 80px;
+  font-size: 28px;
+}
+
+.section-title span {
+  color: #c5cbe1;
+  font-weight: bold;
+  font-family: serif;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.side-by-side {
+  justify-content: space-evenly;
+  padding-bottom: 130px;
+  display: flex;
 }
 
 .about-left {
-  width: 300px;
+  width: 30%;
   height: 300px;
-  float: left;
   background-color: gray;
   background-image: url("../image/0216.jpg");
   background-size:cover;
@@ -117,21 +158,11 @@
   border: 9px solid #becbd5;
 }
 
-
-
 /* ========================================
     右
 ========================================= */
-.section-width h2 {
-  font-size: 34px;
-  font-weight: bold;
-  text-align: center;
-  font-family: serif;
-}
-
 .about-right {
-  width: 365px;
+  width: 70%;
   height: 200px;
-   float: left;
-   background-color: skyblue;
+  background-color: skyblue;
 }
