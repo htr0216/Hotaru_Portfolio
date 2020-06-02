@@ -1,12 +1,10 @@
 @charset "utf-8";
-
 /* ========================================
-    body
+  body
 ========================================= */
 
-
 /* ========================================
-    header
+  header
 ========================================= */
 /*--メニュー開始ボタン--*/
 .menu-btn{
@@ -29,13 +27,13 @@
   top: 0;
   right: 0;
   z-index: 1;
-  width: 25vw;    /* 100から変更 */
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(22, 22, 28, 0.4);
+  background-color: rgba(22, 22, 28, 0.6);
 }
 
 .menu__item{
@@ -63,24 +61,18 @@
 .menu.is-active{
   transform: translateX(0);
 }
-
 /* ========================================
-    main
+  main
 ========================================= */
 .top-main {
   width: 100%;
-    text-align: center; 
-    height: 780px;
-    color: white; 
-    background-color: gray;
-    background-image: url("../image/IMG_1072 4.jpg");
-    background-size:cover;
-  }
-/* .top-main img {
-  width: 100vw;
-  
-  position: relative;
-} */
+  text-align: center;
+  height: 780px;
+  color: white;
+  background-color: gray;
+  background-image: url("../image/IMG_1072 4.jpg");
+  background-size:cover;
+}
 
 .top-message {
   position: absolute;
@@ -91,11 +83,11 @@
   -ms-transform: translate(-50%, -50%);
 }
 
-.top-main h2 {
+.top-main h1 {
   font-size: 70px;
   font-weight: 500;
   line-height: 1.3;
-  -webkit-font-smoothing: antialiased; 
+  -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
   font-family: serif;
   opacity: 0.7;
@@ -104,7 +96,29 @@
 .top-main p {
   font-size: 24px;
   opacity: 0.7;
-} 
+}
+
+@media all and (max-width: 670px) {
+  .top-main {
+    width: 100%;
+    height: 100%;
+    padding: 300px 0;
+    background-size: cover;
+  }
+
+  .top-message {
+    top: 40%;
+  }
+
+  .top-main h1 {
+    font-size: 37px;
+    margin-bottom: 10px;
+  }
+
+  .top-main p {
+    font-size: 14px;
+  }
+}
 /* ========================================
   ABOUT
 ========================================= */
@@ -114,14 +128,14 @@
 }
 
 .section-width {
- width: 100%;
- margin: 0 auto;
- text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section-wrapper {
   padding-top: 130px;
-  width: 100%;
+  width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -151,6 +165,7 @@
 .about-left {
   width: 30%;
   height: 300px;
+  padding: 0 5%;
   background-color: gray;
   background-image: url("../image/0216.jpg");
   background-size:cover;
@@ -158,11 +173,63 @@
   border: 9px solid #becbd5;
 }
 
+@media all and (max-width: 670px) {
+  .section-width {
+    width: 100%;
+  }
+
+  .section-wrapper {
+    padding-top: 100px;
+    width: 85%;
+  }
+
+  .side-by-side {
+    display: block;
+    text-align: center;
+  }
+
+  .about-left {
+    width: 55%;
+    margin: 0 auto;
+    padding: 0 15%;
+    margin-bottom: 50px;
+  }
+}
 /* ========================================
     右
 ========================================= */
 .about-right {
   width: 70%;
   height: 200px;
-  background-color: skyblue;
+}
+
+.about-right p {
+  width: 80%;
+  margin: 0 0 0 auto;
+  text-align: left;
+}
+
+.about-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-name span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c5cbe1;
+}
+
+@media all and (max-width: 670px) {
+  .about-right {
+    width: 100%;
+  }
+
+  .about-right p {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 14px;
+  }
 }
