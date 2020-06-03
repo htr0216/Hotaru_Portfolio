@@ -221,6 +221,10 @@
   color: #c5cbe1;
 }
 
+.about-right p span {
+  color: #c5cbe1;
+}
+
 @media all and (max-width: 670px) {
   .about-right {
     width: 100%;
@@ -230,6 +234,6 @@
     width: 85%;
     margin: 0 auto;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
