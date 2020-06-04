@@ -224,7 +224,7 @@
   color: #c5cbe1;
 }
 
-.side-by-side .about-right .fa {
+.side-by-side .about-right .fab {
   float: right;
   font-size: 20px;
   margin-right: 20px;
@@ -241,5 +241,60 @@
     margin: 0 auto;
     text-align: left;
     font-size: 12px;
+  }
+}
+/* ========================================
+    SKILLS
+========================================= */
+.p-skill-items {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 130px;
+}
+
+.p-skill-item {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.u-mt-3 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+
+.p-skill-item .fab {
+  font-size: 60px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.p-skill-item p {
+  font-family: serif
+}
+
+.skill-image {
+  margin-left: 10px;
+}
+
+.icon-skill {
+  font-size: 60px;
+}
+
+@media all and (max-width: 670px) {
+  .p-skill-items {
+    margin: 0 30px;
+  }
+
+  .p-skill-item {
+    margin-left: 20px;
+    margin-bottom: 50px;
   }
 }
