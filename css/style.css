@@ -70,13 +70,13 @@
   height: 780px;
   color: white;
   background-color: gray;
-  background-image: url("../image/IMG_1072 4.jpg");
+  background-image: url("../image/IMG_0208\ 2.JPG");
   background-size:cover;
 }
 
 .top-message {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -135,6 +135,7 @@
 
 .section-wrapper {
   padding-top: 130px;
+  padding-bottom: 100px;
   width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -250,8 +251,8 @@
   width: 100%;
   height: 500px;
   margin-bottom: 130px;
-  background-image: url("../image/IMG_3268.jpg");
-  background-size: cover;
+  background-color: #f2f2f2;
+  padding-bottom: 80px;
 }
 
 .p-skill-items {
@@ -304,5 +305,79 @@
   .p-skill-item {
     margin-left: 20px;
     margin-bottom: 50px;
+  }
+}
+/* ========================================
+    PORTFOLIO
+========================================= */
+#PORTFOLIO {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.container-width {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-width .container {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.portfolio-list {
+  width: 40%;
+}
+
+.container img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 7px solid #c5cbe1;
+}
+
+.portfolio-coming-soon {
+  width: 40%;
+  position: relative;
+}
+
+.portfolio-coming-soon p {
+  position: absolute;
+  color: #9b9b9b;
+  font-family: serif;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
+
+@media all and (max-width: 670px) {
+  .container-width {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container-width .container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .portfolio-list {
+    width: 100%;
+  }
+
+  .portfolio-coming-soon {
+    width: 100%;
   }
 }
