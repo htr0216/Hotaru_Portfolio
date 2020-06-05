@@ -246,6 +246,14 @@
 /* ========================================
     SKILLS
 ========================================= */
+.skills-bg {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 130px;
+  background-image: url("../image/IMG_3268.jpg");
+  background-size: cover;
+}
+
 .p-skill-items {
   display: flex;
   -webkit-box-pack: center;
