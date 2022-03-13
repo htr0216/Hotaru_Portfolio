@@ -190,7 +190,6 @@
   }
 
   .about-left {
-    width: 55%;
     margin: 0 auto;
     padding: 0 15%;
     margin-bottom: 50px;
@@ -287,10 +286,6 @@
 
 .p-skill-item p {
   font-family: serif
-}
-
-.skill-image {
-  margin-left: 10px;
 }
 
 .icon-skill {
